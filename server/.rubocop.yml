@@ -1,0 +1,12 @@
+AllCops:
+  TargetRubyVersion: 3.2.3
+  NewCops: enable
+
+Layout/LineLength:
+  Max: 80
+
+Style/StringLiterals:
+  EnforcedStyle: double_quotes
+
+Style/Documentation:
+  Enabled: true
