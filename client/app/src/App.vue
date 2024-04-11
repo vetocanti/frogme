@@ -27,7 +27,6 @@ export default {
     methods: {
         handlePageChange(newPage) {
             this.currentPage = newPage;
-            console.log('Page changed to', newPage);
             this.isLoad = false;
             this.fetchData();
         },
@@ -47,7 +46,6 @@ export default {
             })
             .then(response => {
                 this.items = response.data.data;
-                console.log(response.data);
                 this.total = response.data.pagination.total;
                 this.totalPage =  Math.ceil(this.total / this.itemsPerPage);     
                 this.isLoad = true;

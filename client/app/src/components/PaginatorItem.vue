@@ -12,7 +12,6 @@
     methods: {
         previousPage() {
             if (this.currentPage > 1) {
-                console.log('Previous page');
                 this.$emit('page-changed', this.currentPage - 1);
             }
         },
@@ -36,7 +35,7 @@
         color: white;
         border-radius: 10px;
     }
-    
+
     button:hover {
         background-color: #4CAF50;
 
